@@ -6,6 +6,12 @@ import { IOrder } from "@/lib/database/models/order.model";
 import { SearchParamProps } from "@/types";
 import { auth } from "@clerk/nextjs";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata : Metadata = {
+  title : 'Evently | My Profile'
+}
+
 
 const ProfilePage = async ({ searchParams }: SearchParamProps) => {
     const { sessionClaims } = auth();

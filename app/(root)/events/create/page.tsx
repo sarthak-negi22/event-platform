@@ -1,5 +1,11 @@
 import EventForm from "@/components/shared/EventForm"
 import { auth } from "@clerk/nextjs";
+import { Metadata } from "next";
+
+export const metadata : Metadata = {
+  title : 'Evently | Create Event'
+}
+
 
 const CreateEvent = () => {
     const { sessionClaims } = auth();

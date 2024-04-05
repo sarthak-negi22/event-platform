@@ -6,6 +6,11 @@ import { getAllEvents } from "@/lib/actions/event.actions";
 import Search from "@/components/shared/Search";
 import { SearchParamProps } from "@/types";
 import CategoryFilter from "@/components/shared/CategoryFilter";
+import { Metadata } from "next";
+
+export const metadata : Metadata = {
+  title : 'Evently | Home'
+}
 
 export default async function Home({ searchParams }: SearchParamProps) {
   const page = Number(searchParams?.page) || 1;
