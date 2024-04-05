@@ -16,6 +16,10 @@ export const metadata: Metadata = {
     icon: '/assets/images/logo.svg'
   },
   metadataBase: new URL('https://evently-murex-three.vercel.app/'),
+  openGraph: {
+    images: '/opengraph-image.png',
+  },
+
 };
 
 export default function RootLayout({
