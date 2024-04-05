@@ -11,10 +11,11 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Evently",
-  description: "An event management platform",
+  description: "Effortlessly streamline event planning with our comprehensive event management platform",
   icons : {
     icon: '/assets/images/logo.svg'
-  }
+  },
+  metadataBase: new URL('https://evently-murex-three.vercel.app/'),
 };
 
 export default function RootLayout({
