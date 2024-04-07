@@ -9,7 +9,7 @@ import CategoryFilter from "@/components/shared/CategoryFilter";
 import { Metadata } from "next";
 
 export const metadata : Metadata = {
-  title : 'Evently | Home'
+  title : 'Evently'
 }
 
 export default async function Home({ searchParams }: SearchParamProps) {
