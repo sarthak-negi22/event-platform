@@ -7,7 +7,7 @@ import Search from "@/components/shared/Search";
 import { SearchParamProps } from "@/types";
 import CategoryFilter from "@/components/shared/CategoryFilter";
 import { Metadata } from "next";
-
+// test
 export const metadata : Metadata = {
   title : 'Evently'
 }
