@@ -3,6 +3,7 @@ import Header from "@/components/shared/Header";
 import { Metadata } from "next";
 
 export const metadata : Metadata = {
+  title:'Evently',
   description : 'Effortlessly streamline event planning with our comprehensive event management platform',
   metadataBase: new URL('https://evently-murex-three.vercel.app/'),
   openGraph: {
