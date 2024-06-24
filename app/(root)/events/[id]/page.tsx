@@ -18,7 +18,8 @@ const EventDetails = async ({ params : { id } , searchParams} : SearchParamProps
         categoryId : event.category._id,
         eventId : event._id,
         page : searchParams.page as string,
-    })
+    });
+    // const relatedPage = Number(searchParams.page as string) || 1;
 
   return (
     <>
@@ -96,6 +97,7 @@ const EventDetails = async ({ params : { id } , searchParams} : SearchParamProps
             collectionType = "All_Events"
             limit = { 3  }
             page = { searchParams.page as string }
+            urlParamName = "relatedPage"
             totalPages = { relatedEvents?.totalPages }
           />
     </section>
