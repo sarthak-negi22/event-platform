@@ -49,12 +49,12 @@ export const convertFileToUrl = (file: File) => URL.createObjectURL(file)
 
 export const formatPrice = (price: string) => {
   const amount = parseFloat(price)
-  const formattedPrice = new Intl.NumberFormat('en-US', {
+  const formattedPrice = new Intl.NumberFormat('en-IN', {
     style: 'currency',
-    currency: 'USD',
+    currency: 'INR',
   }).format(amount)
 
-  return formattedPrice
+  return formattedPrice;
 }
 
 export function formUrlQuery({ params, key, value }: UrlQueryParams) {
