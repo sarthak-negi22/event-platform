@@ -11,7 +11,7 @@ export const metadata : Metadata = {
   title : 'Evently | Event Overview'
 }
 
-
+// test 
 const EventDetails = async ({ params : { id } , searchParams} : SearchParamProps) => {
     const event = await getEventById(id);
     const relatedEvents = await getRelatedEventsByCategory({
